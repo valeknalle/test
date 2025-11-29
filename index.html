@@ -1,40 +1,87 @@
 <!DOCTYPE html>
-<html lang="com">
+<html lang="de">
 <head>
   <meta charset="UTF-8">
   <title>Hinweis</title>
-  <!-- Weiterleitung nach 5 Sekunden anpassen: Ziel-URL eintragen -->
+
+  <!-- Weiterleitung nach 5 Sekunden -->
   <meta http-equiv="refresh" content="5; url=https://www.pornhub.com">
+
   <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: linear-gradient(135deg, #f5f7fa, #e4e8ee);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+      background: white;
+      padding: 3rem 3.5rem;
       max-width: 700px;
-      margin: 80px auto;
-      line-height: 1.5;
+      text-align: center;
+      border-radius: 16px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
     }
+
     h1 {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
     }
-    p {
+
+    .main-text {
+      font-size: 1.4rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+
+    .highlight {
+      font-size: 1.6rem;
+      font-weight: 600;
+      margin: 1.2rem 0;
+    }
+
+    .countdown {
       font-size: 1rem;
-      margin: 0.3rem 0;
+      color: #555;
+      margin-top: 1.2rem;
+    }
+
+    a {
+      color: #1f6feb;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
+
 <body>
-  <h1>Hinweis</h1>
-  <p>
-    Du wirst inn kürze zu persönlichen Videos von mir weitergeleitet (5 Sekunden) :).
-  </p>
-    Schinken muss stinken!
-  </p>
-  <p>
-    Du wirst in <strong>5&nbsp;Sekunden</strong> automatisch weitergeleitet.
-  </p>
-  <p>
-    Wenn nicht, kannst du hier klicken:
-    <a href="https://www.pornhub.com">Weiter zur Zielseite</a>.
-  </p>
+  <div class="card">
+    <h1>Kurzer Hinweis 🙂</h1>
+
+    <p class="main-text">
+      Du wirst in Kürze zu persönlichen Videos von mir weitergeleitet.
+    </p>
+
+    <p class="highlight">
+      Schinken muss stinken 😉
+    </p>
+
+    <p class="countdown">
+      Automatische Weiterleitung in <strong>5&nbsp;Sekunden</strong>.<br>
+      Falls nichts passiert:
+      <a href="https://www.pornhub.com">hier klicken</a>.
+    </p>
+  </div>
 </body>
 </html>
